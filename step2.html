@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DLIMS - Step 2</title>
+
+<style>
+body{
+  margin:0;
+  background:#ffffff;
+  font-family:Arial, sans-serif;
+}
+
+.container{
+  width:90%;
+  max-width:500px;
+  margin:0 auto;
+  padding:20px 0 40px;
+}
+
+.progress{
+  height:8px;
+  background:#e0e0e0;
+  border-radius:5px;
+  margin-bottom:20px;
+}
+.progress div{
+  width:50%;
+  height:100%;
+  background:#1fbf75;
+  border-radius:5px;
+}
+
+label{
+  font-weight:bold;
+  display:block;
+  margin-top:18px;
+}
+
+input, select{
+  width:100%;
+  padding:14px;
+  margin-top:6px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  font-size:15px;
+}
+
+.file-box{
+  margin-top:8px;
+  padding:25px;
+  border:2px dashed #9ad3c1;
+  text-align:center;
+  border-radius:8px;
+  color:#777;
+}
+
+button{
+  width:100%;
+  margin-top:30px;
+  padding:16px;
+  background:#0a7d3b;
+  color:#fff;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Progress -->
+  <div class="progress"><div></div></div>
+
+  <label>Full Name / پورا نام *</label>
+  <input type="text">
+
+  <label>CNIC Number / شناختی کارڈ نمبر *</label>
+  <input type="text" placeholder="13 Digits">
+
+  <label>Mobile Number / موبائل نمبر *</label>
+  <input type="text" placeholder="11 Digits">
+
+  <label>District / ضلع</label>
+  <input type="text">
+
+  <label>Address / پتہ *</label>
+  <input type="text">
+
+  <label>City / شہر</label>
+  <input type="text">
+
+  <label>Province / صوبہ</label>
+  <input type="text">
+
+  <label>CNIC Front / شناختی کارڈ سامنے کی تصویر *</label>
+  <div class="file-box">
+    <input type="file">
+  </div>
+
+  <label>CNIC Back / شناختی کارڈ کے پیچھے کی تصویر *</label>
+  <div class="file-box">
+    <input type="file">
+  </div>
+
+  <label>Personal Photo / ذاتی تصویر *</label>
+  <div class="file-box">
+    <input type="file">
+  </div>
+
+  <label>License Type / لائسنس کی قسم *</label>
+  <select>
+    <option>- Select -</option>
+    <option>Motorcycle</option>
+    <option>Car</option>
+    <option>LTV</option>
+    <option>HTV</option>
+  </select>
+
+  <button>Next</button>
+
+</div>
+
+</body>
+</html>
